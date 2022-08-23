@@ -35,9 +35,9 @@ def home():
     if form.validate_on_submit():
         doc = ner_spacy(form.text.data)
         html = displacy.render(doc,style="ent", minify=True)
-        entities = defaultdict(list)
+        entities = defaultdict(set)
         for ent in doc.ents:
-            entities[ent.label_].append(ent.text)
+            entities[ent.label_].add(ent.text)
         return render_template('index.html', form=form, result={'html': html, 'entities': entities, 'label_config': DEFAULT_LABEL_COLORS})
     return render_template('index.html', form=form)
 
