@@ -1,0 +1,28 @@
+body {
+    background-color: #f5e8c7;
+}
+
+#ner-container {
+    margin: 5em 0em;
+    background-color: #ecccb2;
+}
+
+#ner-heading {
+    color:#ac7088
+}
+
+.entity-card {
+    background-color: #ecccb2;
+}
+
+.ner-label {
+    font-weight: bold; 
+    padding: 0.45em 0.6em; 
+    border-style: solid; 
+    border-radius: 5px; 
+}
+
+.text-entity {
+    background-color: #deb6ab;
+    border-color: #ac7088;
+}
