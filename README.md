@@ -8,6 +8,7 @@
 
 1. Compile using `make install`
 2. Run using `make start`
+3. Open http://localhost:5000 in your favourite web browser and ENJOY :)
 
 ### Features:
 
